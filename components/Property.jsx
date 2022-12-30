@@ -28,7 +28,7 @@ const Property = ({ property: { coverPhoto, price, rentFrequency, rooms, title, 
       transitionDuration: "200ms",
       boxShadow: "1px 1px 5px #00000030",
     }}>
-    <Box height={260}>
+    <Box height={200}>
       <Image
         src={coverPhoto ? coverPhoto.url : DefaultImage}
         width={400}
@@ -77,7 +77,7 @@ const Property = ({ property: { coverPhoto, price, rentFrequency, rooms, title, 
           color="gold"
           w={8}
           h={8}
-          boxShadow="1px 1px 5px #00000030"
+          boxshadow="1px 1px 5px #00000030"
         /> */
        /* <AiFillStar color="gold" boxShadow="1px 1px 5px #00000030" />
         <AiFillStar color="gold" boxShadow="1px 1px 5px #00000030" />
