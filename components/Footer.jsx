@@ -30,13 +30,13 @@ const Footer = () => {
           </Stack>
           <Stack align={"center"}>
             <ListHeader>Useful links</ListHeader>
-            <Link href="/search?purpose=for-sale" passHref>
+            <Link href="/search?purpose=for-sale" >
               Buy Property
             </Link>
-            <Link href="/search?purpose=for-rent" passHref>
+            <Link href="/search?purpose=for-rent" >
               Rent Property
             </Link>
-            <Link href="/about" passHref>
+            <Link href="/about" >
               About Us
             </Link>
           </Stack>

@@ -61,21 +61,21 @@ const Navbar = () => {
                 color="red.400"
               />
               <MenuList padding={0} margin={0}>
-                <Link href="/" passHref>
+                <Link href="/" >
                   <MenuItem
                     icon={<FcHome />}
                     backgroundColor={router.asPath === "/" && "#99accb"}>
                     Home
                   </MenuItem>
                 </Link>
-                <Link href="/search" passHref>
+                <Link href="/search" >
                   <MenuItem
                     icon={<BsSearch />}
                     backgroundColor={router.asPath === "/search" && "#99accb"}>
                     Search
                   </MenuItem>
                 </Link>
-                <Link href="/search?purpose=for-sale" passHref>
+                <Link href="/search?purpose=for-sale" >
                   <MenuItem
                     icon={<FcAbout />}
                     backgroundColor={
@@ -84,7 +84,7 @@ const Navbar = () => {
                     Buy Property
                   </MenuItem>
                 </Link>
-                <Link href="/search?purpose=for-rent" passHref>
+                <Link href="/search?purpose=for-rent" >
                   <MenuItem
                     icon={<FiKey />}
                     backgroundColor={
@@ -93,7 +93,7 @@ const Navbar = () => {
                     Rent Property
                   </MenuItem>
                 </Link>
-                <Link href="/about" passHref>
+                <Link href="/about" >
                   <MenuItem
                     icon={<FiUserCheck />}
                     backgroundColor={router.asPath === "/about" && "#99accb"}>

@@ -10,7 +10,7 @@ import millify from 'millify';
 import DefaultImage from '../assets/images/bg.jpg';
 
 const Property = ({ property: { coverPhoto, price, rentFrequency, rooms, title, baths, area, agency, isVerified, externalID  } }) => (
-  <Link href={`/property/${externalID}`} passHref>
+  <Link href={`/property/${externalID}`}>
      <Flex
     flexWrap="wrap"
     w="400px"
@@ -26,7 +26,7 @@ const Property = ({ property: { coverPhoto, price, rentFrequency, rooms, title, 
     _hover={{
       transform: "scale(1.02)",
       transitionDuration: "200ms",
-      boxShadow: "1px 1px 5px #00000030",
+      boxshadow: "1px 1px 5px #00000030",
     }}>
     <Box height={200}>
       <Image
@@ -79,13 +79,13 @@ const Property = ({ property: { coverPhoto, price, rentFrequency, rooms, title, 
           h={8}
           boxshadow="1px 1px 5px #00000030"
         /> */
-       /* <AiFillStar color="gold" boxShadow="1px 1px 5px #00000030" />
-        <AiFillStar color="gold" boxShadow="1px 1px 5px #00000030" />
-        <AiFillStar color="gold" boxShadow="1px 1px 5px #00000030" />
+       /* <AiFillStar color="gold" boxshadow="1px 1px 5px #00000030" />
+        <AiFillStar color="gold" boxshadow="1px 1px 5px #00000030" />
+        <AiFillStar color="gold" boxshadow="1px 1px 5px #00000030" />
         {parseInt(millify(price).slice(0, -1)) > 10 ? (
-          <AiFillStar color="gold" boxShadow="1px 1px 5px #00000030" />
+          <AiFillStar color="gold" boxshadow="1px 1px 5px #00000030" />
         ) : (
-          <AiOutlineStar color="gold" boxShadow="1px 1px 5px #00000030" />
+          <AiOutlineStar color="gold" boxshadow="1px 1px 5px #00000030" />
         )}
       </Flex>
       <Text fontSize="lg">
