@@ -72,44 +72,6 @@ const SearchFilters=()=>{
         ))}
       </Flex>
 
-      
-      {/* <Flex
-        width="100%"
-        borderTop="0.5px lightgray solid"
-        justifyContent="center"
-        wrap="wrap"
-        paddingY={5}>
-        {showLocations && (
-          <Flex>
-            <InputGroup
-              focusBorderColor="gray.300"
-              w="300px"
-              margin={3}
-              minWidth={"30%"}>
-              <Input
-                placeholder="Type Here"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-              />
-              {searchTerm !== "" && (
-                <InputRightAddon>
-                  <Icon
-                    as={CloseIcon}
-                    cursor="pointer"
-                    // top="5"
-                    zIndex="100"
-                    onClick={() => setSearchTerm("")}
-                  />
-                </InputRightAddon>
-              )}
-              {loading && (
-                <CircularProgress isIndeterminate marginX={5} height={1} />
-              )}
-            </InputGroup>
-   
-          </Flex>
-        )} */}
-      {/* </Flex> */}
         </Flex>
     )
 }
