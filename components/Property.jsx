@@ -78,8 +78,8 @@ const Property = ({ property: { coverPhoto, price, rentFrequency, rooms, title, 
           w={8}
           h={8}
           boxshadow="1px 1px 5px #00000030"
-        /> */
-       /* <AiFillStar color="gold" boxshadow="1px 1px 5px #00000030" />
+        /> 
+        <AiFillStar color="gold" boxshadow="1px 1px 5px #00000030" />
         <AiFillStar color="gold" boxshadow="1px 1px 5px #00000030" />
         <AiFillStar color="gold" boxshadow="1px 1px 5px #00000030" />
         {parseInt(millify(price).slice(0, -1)) > 10 ? (
