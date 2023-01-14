@@ -18,7 +18,7 @@ const SearchFilters=()=>{
     const [loading, setLoading]=useState(false);
     const router=useRouter();
 
-    //search bar
+   
     const searchbg = useColorModeValue("gray.100", "gray.700");
     const inputcolor = useColorModeValue("gray.800", "gray.200");
     const searchProperties = (filterValues) => {
@@ -38,7 +38,7 @@ const SearchFilters=()=>{
         setLoading(false);
       };
 
-      //searching
+     
       useEffect(()=>{
         if(searchTerm!==""){
             const fetchData=async()=>{

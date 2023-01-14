@@ -69,4 +69,3 @@ export async function getServerSideProps({ query }) {
 }
 
 export default Search;
-//to populate the props in nextjs we use getServerSideProps. We dont use getStaticProps because we need the filtered properties only at the time of requesting the page. We use the getStaticProps when the data is available at the build time ahead of the user's request.

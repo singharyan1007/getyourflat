@@ -14,14 +14,14 @@ const Property = ({ property: { coverPhoto, price, rentFrequency, rooms, title, 
      <Flex
     flexWrap="wrap"
     w="400px"
-    // p="5" paddingTop="0"
+   
     m="20px 10px"
     marginBottom={0}
     justifyContent="flex-start"
     cursor="pointer"
     borderRadius="8px"
     overflow="hidden"
-    // border={"1px solid #e0e0e0"}
+    
 
     _hover={{
       transform: "scale(1.02)",

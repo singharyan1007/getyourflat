@@ -50,7 +50,7 @@ const Navbar = () => {
           {({ isOpen }) => (
             <Fragment>
               <MenuButton
-                // onClick={handleMenuClick}
+                
                 as={IconButton}
                 icon={
                   !isOpen ? (
@@ -95,13 +95,7 @@ const Navbar = () => {
                     Rent Property
                   </MenuItem>
                 </Link>
-                {/* <Link href="/about" >
-                  <MenuItem
-                    icon={<FiUserCheck />}
-                    backgroundColor={router.asPath === "/about" && "#99accb"}>
-                    About Us
-                  </MenuItem>
-                </Link> */}
+               
                 <MenuItem>
                   <IconButton
                     width="100%"
