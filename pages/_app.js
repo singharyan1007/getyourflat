@@ -6,21 +6,17 @@ import Layout from '../components/Layout'
 
 function MyApp({ Component, pageProps }) {
   return (
-  
- <>
- <Head>
+    <>
+      <Head>
 
- </Head>
- <ChakraProvider>
+      </Head>
+      <ChakraProvider>
         <Layout>
           <Component {...pageProps} />
         </Layout>
       </ChakraProvider>
- </>
-
+    </>
   )
-  
-  
 }
 
 export default MyApp

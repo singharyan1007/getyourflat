@@ -4,21 +4,21 @@ import {Box} from '@chakra-ui/react';
 import Footer from './Footer';
 import Navbar from './Navbar';
 
-export default function Layout({children}){
-    return (
-        <>
-        <Head>
-            <title>Rent & Buy Properties</title>
-        </Head>
-        <Box maxWidth='1280px' m='auto'>
-            <header>
-                <Navbar/>
-            </header>
-            <main>{children}</main>
-            <footer><Footer/></footer>
+const Layout = ({ children }) => (
+	<>
+		<Head>
+			<title>Rent & Buy Properties</title>
+		</Head>
+		<header>
+			<Navbar />
+		</header>
+		<Box maxWidth="1280px" m="auto">
+			<main>{children}</main>
+		</Box>
+		<footer>
+			<Footer />
+		</footer>
+	</>
+);
 
-        </Box>
-        </>
-    )
-
-}
+export default Layout;
