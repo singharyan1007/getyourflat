@@ -10,7 +10,8 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-
+import { MdRealEstateAgent } from "react-icons/md";
+import realestate from '../assets/images/real-estate.png'
 const ListHeader = ({ children }) => {
   return (
     <Text fontWeight={"500"} fontSize={"xl"}>
@@ -60,10 +61,10 @@ const Footer = () => {
             ml: 8,
           }}
         >
-          <Image boxSize={"100px"} src="#" alt="" position={"relative"} />
+          <Image boxSize={"100px"} src={realestate.src} alt="" position={"relative"} />
         </Flex>
         <Text pt={6} fontSize={"sm"} textAlign={"center"} color="gray.600">
-          © 2022 GETYOURFLAT, Inc. All rights reserved
+          © 2022 Get Your Flat, Inc. All rights reserved
         </Text>
         <Text fontSize={"sm"} textAlign={"center"} color="green.400">
           Made with ❤ by &nbsp;

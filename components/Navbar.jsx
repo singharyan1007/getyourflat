@@ -26,6 +26,8 @@ import {
 import { useColorMode } from "@chakra-ui/react";
 import { Fragment, useState } from "react";
 import { useRouter } from "next/router";
+import realestate from '../assets/images/real-estate.png'
+
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const router = useRouter();
@@ -33,12 +35,12 @@ const Navbar = () => {
     <Flex p="2" borderBottom="1px" borderColor="gray.100">
       <Box
         fontSize={["lg", "xl", "xl", "2xl"]}
-        color="#F56565"
+        color="black"
         fontWeight="bold">
         <Stack direction="row" alignItems="center">
-          
-          <Link href="/" paddingleft="2">
-            GETYOURFLAT
+        <Image boxSize="42px" src={realestate.src} alt="logo" />
+          <Link href="/" paddingleft="2" color="">
+            Get Your Flat
           </Link>
         </Stack>
       </Box>
@@ -58,7 +60,7 @@ const Navbar = () => {
                   )
                 }
                 variant='outline'
-                color="red.400"
+                
               />
               <MenuList padding={0} margin={0}>
                 <Link href="/" >
@@ -93,13 +95,13 @@ const Navbar = () => {
                     Rent Property
                   </MenuItem>
                 </Link>
-                <Link href="/about" >
+                {/* <Link href="/about" >
                   <MenuItem
                     icon={<FiUserCheck />}
                     backgroundColor={router.asPath === "/about" && "#99accb"}>
                     About Us
                   </MenuItem>
-                </Link>
+                </Link> */}
                 <MenuItem>
                   <IconButton
                     width="100%"
